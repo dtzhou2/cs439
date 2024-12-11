@@ -47,7 +47,7 @@ int main(int argc, char** argv)
     nl_socket_modify_cb(sk, NL_CB_VALID, NL_CB_CUSTOM,
             nlCallback, NULL);
 
-    //allocate a message
+    //allocate a messagecs
     nl_msg* msg = nlmsg_alloc();
 
     nl80211_commands cmd = NL80211_CMD_GET_INTERFACE;
