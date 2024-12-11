@@ -1,10 +1,10 @@
-#include "netlink/netlink.h"
-#include "netlink/genl/genl.h"
-#include "netlink/genl/ctrl.h"
-#include <net/if.h>
-
-//copy this from iw
-#include "nl80211.h"
+#include <errno.h>
+#include <linux/nl80211.h>
+#include <netlink/attr.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <unl.h>
 
 static int expectedId;
 
